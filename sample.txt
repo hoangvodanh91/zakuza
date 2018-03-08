@@ -22,20 +22,19 @@
   "rooms": {
     "room_id1": {
       "name": "Room 1",
-      "type": "private"
+      "type": "private",
+	  "members" : {
+		"user_id1": true,
+		"user_id2": true
+	  }
     },
     "room_id2": {
       "name": "Room 2",
-      "type": "public"
-    }
-  },
-  "room_members": {
-    "room_id1": {
-      "user_id1": true,
-      "user_id2": true
-    },
-    "room_id2": {
-      "user_id1": true
+      "type": "public",
+	  "members" : {
+		"user_id1": true,
+		"user_id2": true
+	  }
     }
   },
   "room_messages": {
