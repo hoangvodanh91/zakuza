@@ -1,1 +1,78 @@
-This is a sample.
+{
+  "users": {
+    "user_id1": {
+      "name": "Trang",
+      "address": "HCM"
+    },
+    "user_id2": {
+      "name": "Vu",
+      "address": "Daklak"
+    },
+    "contact": {
+      "user_list": [
+        "user_id1",
+        "user_id2"
+      ],
+      "room_list": [
+        "room_id1",
+        "room_id2"
+      ]
+    }
+  },
+  "rooms": {
+    "room_id1": {
+      "name": "Room 1",
+      "type": "private"
+    },
+    "room_id2": {
+      "name": "Room 2",
+      "type": "public"
+    }
+  },
+  "room_members": {
+    "room_id1": {
+      "user_id1": true,
+      "user_id2": true
+    },
+    "room_id2": {
+      "user_id1": true
+    }
+  },
+  "room_messages": {
+    "room_id1": {
+      "m1": {
+        "sender": "user_id1",
+        "message_type": "text",
+        "message": "Hello world",
+        "timestamp": "2018-03-08T08:03:30.187Z"
+      },
+      "m2": {
+        "sender": "user_id2",
+        "message_type": "image",
+        "message": "http://abc.jpg",
+        "timestamp": "2018-03-08T08:03:30.187Z"
+      }
+    },
+    "room_id2": {}
+  },
+  "user_messages": {
+    "user_id1_user_id2": {
+      "m1": {
+        "sender": "user_id1",
+        "message_type": "text",
+        "message": "Hello world",
+        "timestamp": "2018-03-08T08:03:30.187Z"
+      },
+      "m2": {}
+    },
+    "user_id1_user_id3": {
+      "m1": {
+        "sender": "user_id3",
+        "message_type": "text",
+        "message": "Hello world",
+        "timestamp": "2018-03-08T08:03:30.187Z"
+      },
+      "m2": {}
+    }
+  }
+}
